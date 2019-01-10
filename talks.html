@@ -80,224 +80,103 @@
 
         <div class="row">
           <div class="col-md-12">
-          <a id="JanV" target="_blank" class="pn-name">Dynamic Programming
-          Language Implementation with LLVM</a> <a class="pn-aff-name"> Petr
-          Maj, Oli Fluckiger, and Jan Vitek </a>
-            <p>This short course will introduce students to LLVM and run
-            through the main steps of implementing a just-in-time compiler
-            for a small dynamic language like, say, R. We will discuss the
-            choice of intermediate representation, compilation to LLVMIR,
-            static analysis and optimization, runtime services and garbage
-            collection. The lecture will include hands-on components, so
-	    install LLVM before coming to Bertinoro!</p>
+            <a id="JanV" target="_blank" class="pn-name">Dynamic Programming
+            Language Implementation with LLVM</a> <a class="pn-aff-name">Petr
+            Maj, Oli Fluckiger, and Jan Vitek </a>
+            <p>This short course will introduce students to LLVM and run through
+            the main steps of implementing a just-in-time compiler for a small
+            dynamic language like, say, R. We will discuss the choice of
+            intermediate representation, compilation to LLVMIR, static analysis
+            and optimization, runtime services and garbage collection. The
+            lecture will include hands-on components, so install LLVM before
+            coming to Bertinoro!</p>
           </div>
         </div>
         <hr> 
+        
         <div class="row">
           <div class="col-md-12">
-            <a id="SteveB" target="_blank" class="pn-name"> Micro Virtual
-            Machines </a> <a class="pn-aff-name"> Steve Blackburn </a>
-            <p>Many of today’s programming languages are broken. Poor
-            performance, lack of features and hard-to-reason-about semantics
-            can cost dearly in software maintenance and inefficient
-            execution.  An important reason for this brokenness is that much
-            of language design is implementation-driven. The difficulties in
-            implementation and insufficient understanding of concepts bake
-            bad designs into the language itself. Concurrency, architectural
-            details and garbage collection are three fundamental concerns
-            that contribute much to the complexities of implementing managed
-            languages.  In this lecture I will describe the micro virtual
-            machine, a thin abstraction designed specifically to relieve
-            implementers of managed languages of the most fundamental
-            implementation challenges that currently impede good design. The
-            micro virtual machine targets abstractions over memory (garbage
-            collection), architecture (compiler backend), and concurrency. I
-            will motivate the micro virtual machine and give an account of
-            the design and initial experience of a concrete instance, which
-            we call Mu, built over a four year period. Our goal is to remove
-            an important barrier to performant and semantically sound
-            managed language design and implementation.</p>
+            <a id="LaurenceT" target="_blank" class="pn-name">JIT Compilers for Free</a> <a class="pn-aff-name">Laurence Tratt</a>
+            <p>Writing JIT compilers for dynamic languages by hand is an
+            arduous and heroic process, particularly for dynamic languages with
+            “interesting” semantics. Meta-tracing is an approach for reducing
+            that effort; VM authors only write an interpreter and some hints.
+            In this hands-on session students will implement a small dynamic
+            language from scratch as well as a JITusing the RPython
+            meta-tracing language that underlies the PyPy project.
           </div>
         </div>
         <hr>
 
         <div class="row">
           <div class="col-md-12">
-            <a id="LaurenceT" target="_blank" class="pn-name">JIT Compilers for Free</a> <a class="pn-aff-name"> Laurence Tratt</a>
-	    <p>Writing JIT compilers for dynamic languages by hand is an
-	    arduous and heroic process, particularly for dynamic languages
-	    with “interesting” semantics. Meta-tracing is an approach for
-	    reducing that effort; VM authors only write an interpreter and
-	    some hints. In this hands-on session students will implement a
-	    small dynamic language from scratch as well as a JITusing the
-	    RPython meta-tracing language that underlies the PyPy project.
+            <a id="MarioW" target="_blank" class="pn-name">The coming persistence apocalypse</a> <a class="pn-aff-name">Mario Wolczko</a>
+            <p>DRAM’s dominance may be coming to an end, and sooner than you
+            think.  New memory technologies promise increased density,
+            decreased cost and most importantly, an end to volatility, since
+            they do not need power to maintain state. The consequences for the
+            way we program — and on the design of programming languages — will
+            be profound.  In this presentation I’ll describe the opportunities
+            and challenges that arise from Non-Volatile RAM, and the plethora
+            of PhD-worthy problems that will need to be solved.</p>
           </div>
         </div>
         <hr>
+
         <div class="row">
           <div class="col-md-12">
-            <a id="DavidE" target="_blank" class="pn-name">The Tensile Strength of JITs </a> <a class="pn-aff-name"> David Edelsohn </a>
-            <p>Whenever the need to compile a new dynamically typed language
-            arises, an appealing option is to repurpose an existing
-            statically typed language Just-In-Time (JIT) compiler. This
-            lecture will examine the benefits and limitations of the
-            repurposed JIT approach. How far can JITs be stretched? </p>
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-md-12">
-            <a id="RichardJ" target="_blank" class="pn-name">High Performance, Fully Concurrent Garbage Collectors</a> <a class="pn-aff-name"> Richard E. Jones </a>
-            <p>Building any kind of high performance garbage collector for a
-            complete language implementation is hard. High performance
-            requires careful attention to detail and bugs are notoriously
-            difficult to discover. Add to the mix, copying and full
-            concurrency (on-the-fly collection) makes the task even
-            harder. In this talk, I'll explain how we built a high
-            performance, replication copying, fully concurrent collector for
-            Java, focusing in particular on how we obtained confidence that
-            the collector was correct.</p>
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-md-12">
-            <a id="MattM" target="_blank" class="pn-name"> Static Analysis </a> <a class="pn-aff-name"> Matt Might </a>
-            <p>This lecture will cover topics related to static analysis,
-            abstract interpteration and control flow analysis.</p>
+            <a id="CristinaC" target="_blank" class="pn-name"> Secure Languages Now </a> <a class="pn-aff-name">Cristina Cifuentes</a>
+            <p>In the cloud world, the attack surface for an application is
+            much larger than in an on-premise deployment.  Current commonly
+            used languages provide limited support for security, with
+            vulnerabilities such as Injection attacks (e.g., SQL injection,
+            cross-site scripting, etc), and Leaks of sensitive data being the
+            most representative vulnerabilities exploited in web applications
+            over the past 5 years.  Combined with the trend towards micro
+            services, where services are language agnostic and hence are
+            implemented by various languages at a time, we have a growing
+            security problem that needs to be addressed now.
+
+            In this talk I give an overview of the problem, I’ll review some
+            solutions that have practical applications, and we’ll embark on the
+            first steps to develop a new language that addresses the lack of
+            security concepts provided in today’s commonly used languages for
+            web and cloud applications.</p>
           </div>
         </div>
        <hr>
-        <div class="row">
-          <div class="col-md-12">
-            <a id="FrancescoL" target="_blank" class="pn-name">AI for IA:
-            Abstract Interpretation and its Industrial
-            Applications</a> <a class="pn-aff-name">  Francesco
-            Logozzo </a>
-            <p>In this lecture I will first give a gentle introduce to
-            abstract interpretation, compare it with other formal methods,
-            and explain why abstract interpretation is so successful in
-            industry (spoiler alert: it focuses on the properties of
-            interest and it scales up). I will then illustrate the
-            applications of abstract interpretation at Facebook to analyze
-            tens of millions of lines of code with a very false positive
-            ratio.</p>
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-md-12">
-            <a id="AlastairD" target="_blank" class="pn-name">Testing
-            Language Implementations</a> <a class="pn-aff-name"> Alastair
-            Donaldson </a>
-    <p>This talk will focus on methods for testing compilers to find defects
-            early -- which are readily applicable to rapidly evolving
-            compiler code bases, such as the gcc and LLVM open source
-            compiler projects.  I'll cover the major techniques that have
-            been investigated in recent research literature: differential
-            testing, equivalence modulo inputs testing, and program
-            enumeration, explaining what these are, what their associated
-            benefits and drawbacks are, and how they complement each other.
-            I will finish by giving an overview of an ongoing
-            project, <a href="https://medium.com/@afd_icl/crashes-hangs-and-crazy-images-by-adding-zero-689d15ce922b#.m2gxk5w95">
-            GLFuzz</a>, which is a technique for testing compilers
-            associated with OpenGL, focussing both on technical challenges
-            and experiences from talking to GPU vendors.
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-md-12">
-            <a id="JeffB" target="_blank" class="pn-name"> Designing + Implementing Julia </a> <a class="pn-aff-name"> Jeff Bezanson </a>
-            <p> Julia is a multimethod-based language with an unusually
-            powerful dispatch system that has been useful for organizing
-            large numerical libraries. Although Julia is dynamically typed,
-            it is also designed to support static analysis and generation of
-            efficient code. In the first part of this talk, I'll discuss our
-            design considerations and the techniques needed to make the
-            design work in practice. In the second part, I'll cover
-            lower-level implementation issues, including our experience with
-            LLVM, and general gotchas encountered when interfacing with
-            real-world systems software. </p>
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-md-12">
-            <a id="HeatherM" target="_blank" class="pn-name"> Modest Language Extensions as a Pattern?</a> <a class="pn-aff-name"> Heather Miller </a>
-            <p>It's no secret that Scala is a powerful language; whether you want to
-            use it as a host language to embed your own DSLs in or you want to
-            lift as much of your computation to the type level as possible. What
-            many people don't know, however, is that some of these language
-            features can be combined to allow you to make modest extensions to the
-            compiler as libraries. In this talk, I'll walk you through some of
-            Scala's more advanced features that can enable you to build your own
-            modest compiler extensions, mostly as libraries! </p>
-        </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-md-12">
-          <a id="TobiasW" target="_blank" class="pn-name">Encore: Hello, World!</a> <a class="pn-aff-name"> Tobias Wrigstad </a>   
-            <p>Encore is a new, open source, experimental object-oriented
-            programming language developed in the UPSCALE EU
-            project. Encore's starting point is the actor model with its
-            inherent support for concurrent programming. Encore goes beyond
-            the actor model, adding futures and active object-style
-            asynchronous structured programming.  This lecture will focus on
-            how Encore extends the actor model with so-called hot objects,
-            and how that integration hits all parts of language design:
-            surface syntax, type system, scheduling and garbage
-            collection.</p>
-          </div>
-	</div>
-	<hr>
 
         <div class="row">
           <div class="col-md-12">
-            <a id="SophiaD" target="_blank" class="pn-name">Pony: Actors and Objects</a> <a class="pn-aff-name"> Sophia Drossopoulou </a>
-            <p>Pony is a new, actor-based,  strongly typed  programming language
-            designed to make it easy to write efficient, safe concurrent programs.
-            We will discuss the rationale for the development of Pony, give a
-            short introduction to the actor paradigm, introduce  the type system,
-            and show how it supports the development of datarace-free programs 
-            which allow actors to share mutable state, and message passing without 
-            copying. We will develop some small demonstrator examples. We will 
-            also discuss causality: what it is a and what it buys for the programmer.
-            We will outline salient parts of Pony’s implementation: the runtime
-            organization, message queues, the scheduler, and garbage collection,
-            and will show how the type system and causality were  employed to allow
-            these the be efficiently implemented. </p>
-        </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-md-12">
-            <a id="SureshJ" target="_blank" class="pn-name"> Reasoning about
-            Weak Consistency and Isolation </a> <a class="pn-aff-name">
-            Suresh Jagannathan </a>
-            <p>Web services replicate application state and logic across
-            multiple replicas within and across data centers. Replication is
-            intended not only to improve application throughput and reduce
-            user-perceived latency, but also to tolerate partial failures.
-            Strong consistency models such as serializability, while easy to
-            understand and specify, mask the realities underlying
-            large-scale distributed systems with respect to non-uniform
-            latency, availability, and network partitions.  Web services,
-            which aim to provide an "always-on" experience, overwhelmingly
-            favor availability and partition tolerance over strong
-            consistency. To this end, several weak consistency models such
-            as eventual consistency have been deployed.  Weakly consistent
-            systems complicate program reasoning by allowing concurrent
-            conflicting updates and by exposing inconsistencies that may
-            violate high-level program invariants.  We will study the
-            semantics of such systems, and explore abstractions and
-            formalisms that can be brought to bear to tame their complexity.
-	          </p>
+            <a id="BenT" target="_blank" class="pn-name">A little (more) about V8 and WebAssembly</a> <a class="pn-aff-name">Ben L. Titzer</a>
+            <p>This talk will focus on details about V8's approach to running
+            JavaScript and WebAssembly code.</p>
           </div>
         </div>
         <hr>
 
+        <div class="row">
+          <div class="col-md-12">
+            <a id="AndersM" target="_blank" class="pn-name">Static Program Analysis</a> <a class="pn-aff-name">Anders Møller</a>
+            <p>Static program analysis is the art of reasoning about the
+            behavior of computer programs without actually running them. This
+            is useful not only in optimizing compilers for producing efficient
+            code but also for automatic error detection and other tools that
+            can help programmers.
+
+            This lecture will present essential principles and algorithms for
+            static program analysis, based on material from <a
+            href="http://cs.au.dk/~amoeller/spa/">http://cs.au.dk/~amoeller/spa/</a>.
+            We take a constraint-based approach where suitable constraint
+            systems conceptually divide analysis into a front-end that
+            generates constraints from program code and a back-end that solves
+            the constraints to produce the analysis results. If time permits,
+            the lecture will be accompanied by theoretical exercises and by
+            practical exercises based on a Scala implementation of the
+            algorithms.
+          </div>
+        </div>
+        <hr>
 
     </div>
   </div>
