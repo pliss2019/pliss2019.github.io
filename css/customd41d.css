@@ -78,7 +78,7 @@
 }
  
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>.active>a:hover {
-    color: #B93B2E;
+    color: #FDD506;
     background: transparent;
     /*font-weight:bold;*/
     -webkit-transition: all 0.2s ease-in-out;
@@ -326,6 +326,7 @@ body {
 .pn-aff-name {
     font-size: 20px;
     font-weight: bold;
+    margin-left: 5px;
     /*font-style: italic;*/
 }
 
